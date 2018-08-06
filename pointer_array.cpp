@@ -11,7 +11,9 @@ int main(void){
 
 
     int arr[LENGTH] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    cout << arr << endl;
+    int* p = &arr[4];
+
+    cout << *++p << endl;
 
     for(int i = 0; i < LENGTH; i++){
 
@@ -19,7 +21,8 @@ int main(void){
         cout << "*(arr + " << i << ") = " << *(arr + i) << endl;
     }
 
-    cout << arr + 1 << endl;
+    cout << arr + 3 << endl;
+    cout << &arr[3] << endl;
 
     return 0;
 

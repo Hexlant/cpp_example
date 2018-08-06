@@ -31,10 +31,10 @@ int main(void){
     int val = 10;
     int* p = &val;
 
-    int& ref = p;
+    int*& ref = p;
 
     cout << "p = " << *p << endl;
-    cout << "ref = " << ref << endl;
+    cout << "ref = " << *ref << endl;
 
 //    cout << "&target = " << &target << endl;
 //    cout << "&ref = " << &ref << endl;
